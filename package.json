@@ -1,0 +1,33 @@
+{
+  "name": "template-nuxt",
+  "author": "f2face <dev@f2face.com>",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev --host=0.0.0.0",
+    "generate": "nuxt generate",
+    "preview": "pnpm run build && wrangler pages dev",
+    "postinstall": "nuxt prepare",
+    "deploy": "pnpm run build && wrangler pages deploy",
+    "cf-typegen": "wrangler types"
+  },
+  "dependencies": {
+    "@nuxtjs/color-mode": "^3.4.1",
+    "@nuxtjs/tailwindcss": "^6.12.0",
+    "nuxt": "^3.11.2",
+    "nuxt-icons": "^3.2.1",
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240423.0",
+    "eslint": "^9.1.1",
+    "eslint-config-prettier": "^9.1.0",
+    "h3": "^1.11.1",
+    "nitro-cloudflare-dev": "^0.1.4",
+    "nuxt-gtag": "^2.0.5",
+    "prettier": "^3.2.5",
+    "wrangler": "^3.52.0"
+  }
+}

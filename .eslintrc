@@ -1,0 +1,31 @@
+{
+    "plugins": [],
+    "extends": ["eslint:recommended", "prettier"],
+    "rules": {
+        "no-unused-vars": [
+            "warn",
+            {
+                "vars": "local",
+                "args": "after-used"
+            }
+        ],
+        "no-use-before-define": [
+            "error",
+            {
+                "functions": false,
+                "classes": true,
+                "variables": true,
+                "allowNamedExports": false
+            }
+        ],
+        "array-callback-return": "error"
+    },
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "env": {
+        "node": true,
+        "es6": true
+    }
+}
